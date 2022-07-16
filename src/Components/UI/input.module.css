@@ -1,0 +1,66 @@
+
+.input {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 30%;
+  max-width: 25rem;
+  background-color:white;
+}
+
+.input label {
+  font: inherit;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input input {
+  display: flex;
+  width: 75%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.input textarea{
+  display: flex;
+  width: 75%;
+  height: 5rem;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  position: inherit;
+  resize: none;
+}
+.input textarea:focus{
+  outline: none;
+  
+}
+
+
+.input select:focus{
+  outline: none;
+}
+
+.input p{
+  color:red;
+}
+
+#required {
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .input {
+    left: calc(50% - 20rem);
+    width: 25rem;
+  }
+}
+
+
+
+
