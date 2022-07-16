@@ -146,29 +146,39 @@ function Form() {
     }
 
     const styleFn = {
-        control: (css) => {
+        control: (css,styles) => {
             return {
                 ...css,
-                height: 2,
-                width: 315
             }
 
         },
         option: (styles) => {
             return {
                 ...styles,
+               
                 backgroundColor: "white",
                 color: "black",
             };
         },
         menu: () => {
             return {
-                width: 315,
+
                 color: 'black',
             }
 
-        }
-
+        },
+        // option: (styles) => ({
+        //     ...styles,
+        //     marginRight: "2.5rem",
+        //     ":focus": {
+        //         ...styles[":focus"],
+        //         outline: "none",
+        //     },
+        //     "@media only screen and (max-width: 1200px)": {
+        //         ...styles["@media only screen and (max-width: 1200px)"],
+        //         marginRight: "1.5rem",
+        //     },
+        // })
     }
 
     return (
