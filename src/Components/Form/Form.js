@@ -192,6 +192,7 @@ function Form() {
                             <span>Name</span><span id={style.required}>*</span>
                         </label>
                         <input
+                            autocomplete="nope"
                             type="text"
                             value={name}
                             onChange={namechangeHandler}
@@ -202,6 +203,7 @@ function Form() {
                     <div>
                         <label><span>Email</span><span id={style.required}>*</span></label>
                         <input
+                            autocomplete="nope"
                             type="text"
                             value={email}
                             onChange={emailChangeHandler}
@@ -212,6 +214,7 @@ function Form() {
                     <div id="mobile">
                         <label>Mobile</label>
                         <input
+                            autocomplete="nope"
                             type="tel"
                             value={mobileNo}
                             onChange={mobileNoChangeHandler}
