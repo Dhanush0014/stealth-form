@@ -36,7 +36,6 @@ function Form() {
             if (Object.keys(formError).length !== 0) {
                 console.log(formError)
             }
-
             return formError
         })
     }, [formError, country, state, city, states, cities]);
@@ -125,7 +124,6 @@ function Form() {
         setCountry('');
         setState('');
         setCity('');
-        setFormError('');
         setName('');
         setEmail('');
         setMobileNo('');
