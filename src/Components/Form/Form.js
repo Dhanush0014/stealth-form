@@ -119,15 +119,19 @@ function Form() {
         }
         console.log("form Handled")
         console.log(data);
-        setStates('');
-        setCities('');
-        setCountry('');
-        setState('');
-        setCity('');
-        setName('');
-        setEmail('');
-        setMobileNo('');
-        setMessage('');
+       
+        if(Object.keys(formError).length===0){
+            setStates('');
+            setCities('');
+            setCountry('');
+            setState('');
+            setCity('');
+            setName('');
+            setEmail('');
+            setMobileNo('');
+            setMessage('');
+        }
+       
     }
 
     const validate = () => {
