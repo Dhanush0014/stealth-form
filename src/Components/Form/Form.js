@@ -71,7 +71,7 @@ function Form() {
                 ...state
             }))
         }
-        console.log(statesData)
+     
         setState('');
         setCity('');
         setStates(statesData)
@@ -118,7 +118,18 @@ function Form() {
             city: city,
             message: message
         }
+        console.log("form Handled")
         console.log(data);
+        setStates('');
+        setCities('');
+        setCountry('');
+        setState('');
+        setCity('');
+        setFormError('');
+        setName('');
+        setEmail('');
+        setMobileNo('');
+        setMessage('');
     }
 
     const validate = () => {
@@ -167,18 +178,7 @@ function Form() {
             }
 
         },
-        // option: (styles) => ({
-        //     ...styles,
-        //     marginRight: "2.5rem",
-        //     ":focus": {
-        //         ...styles[":focus"],
-        //         outline: "none",
-        //     },
-        //     "@media only screen and (max-width: 1200px)": {
-        //         ...styles["@media only screen and (max-width: 1200px)"],
-        //         marginRight: "1.5rem",
-        //     },
-        // })
+     
     }
 
     return (
